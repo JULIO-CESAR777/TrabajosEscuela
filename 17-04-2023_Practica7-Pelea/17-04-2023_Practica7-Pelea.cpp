@@ -42,7 +42,7 @@ int main()
         while (peleasn)
         {
             std::cout << "Va " << peleas << " Peleas " << " con " << peleadores << " peleadores" << std::endl;;
-            peleadorestotal = peleadores + peleadores;
+            peleadorestotal +=  peleadores;
             peleadores = peleadores - 1;
                 peleas = peleas + 1;
             
@@ -52,7 +52,7 @@ int main()
             }
         }
         peleas = peleas - 1;
-        std::cout << "Fueron al final " << peleas << " peleas OwO y quedo 1 " << " ganador con enfrentamientos de " <<peleadorestotal <<"personas" << std::endl;
+        std::cout << "Fueron al final " << peleas << " peleas OwO y quedo 1 " << " ganador con enfrentamientos de " <<peleadorestotal <<" personas" << std::endl;
 
          
 
@@ -83,29 +83,36 @@ int main()
     case 3:
         
         std::cout << "Bienvenido bro, esta sera una de Grupos, semifinal y final!\n" << std::endl;
-        std::cout << "En grupos de cuantos los quieres? (numero par che) \n" << std::endl;
-        std::cin >> grupos;
-        pelexgrup >> peleadores / grupos;
+        std::cout << "Sera en grupos de 2 \n" << std::endl;      
         
+        pelexgrup = peleadores / 2;
 
         while (peleasn)
         {
-            std::cout << "Va " << peleas << " Peleas \n";
-            pelexgrup = pelexgrup / 2;
+            std::cout << "Va " << peleas << " Peleas con " <<pelexgrup <<" peleadores " << std::endl;
+            
+            peleadorestotal += peleadores;
+            pelexgrup = pelexgrup - 1;
             peleas = peleas + 1;
 
-            if (pelexgrup <= 1)
+            if (pelexgrup == 0)
             {
                 peleasn = false;
             }
-
         }
-        std::cout << "Hubo " << peleas << " peleas en grupo" << std::endl;
+
+
+        ////////// SE ME CANSO EL CERERBRO ASI LO DEJO  :(:(76   (&(%&/(%/(%&)))) CREO QUE ESTUVI BIEN YA QUE :(
+      
+        std::cout << std::endl;
+        peleas = peleas - 1;
+
+        std::cout << "Habra " << peleas << " peleas en grupo  " << std::endl;
 
         break;
 
     default:
-        std::cout << "Te crees muy gracioso no??\n";
+        std::cout << "Te comiste payaso no??\n";
         break;
     }
     
