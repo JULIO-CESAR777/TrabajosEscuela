@@ -3,9 +3,52 @@
 
 #include <iostream>
 
+
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    std::string primerdato  = "hola";
+    std::string contra  = "hola";
+    std::cout << "Sup bro, bienvenido a Sword Art Online, ingresa tus datos para iniciar sesion!\n";
+    std::cout << "Nombre de usuario o correo elecronico \n";
+    std::cin >> primerdato;
+    std::cout << "Ahora dime tu contraseña\n";
+    std::cin >> contra;
+    
+    if (primerdato == "crickoso7000" )
+    {
+        if (contra == "jijijija")
+        {
+            std::cout << "Bien hecho bro \ninsertar musica de liSA*";
+        }
+        else
+        {
+            std::cout << "No bro, ya no te creo";
+        }
+    }
+    else
+    {
+        if (primerdato == "vegetta777@hotmail.com")
+        {
+            if (contra == "jijijija")
+            {
+                std::cout << "Bien hecho bro \n insertar musica de liSA*";
+            }
+            else
+            {
+                std::cout << "No bro, ya no te creo";
+            }
+        }
+        else
+        {
+            std::cout << "Ese nombre de usuario o correo electronico no existe, reintente crack, WAZAAAAAAAAAAAAAAAAAAAAAAAA";
+        }
+    }
+
+
+    
+
+    
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

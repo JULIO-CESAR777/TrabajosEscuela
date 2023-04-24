@@ -59,6 +59,7 @@ int main()
     std::cout << "Namas por que me caiste bien te dire tu IMC " << std::endl;
     std::cout << IMC << std::endl;
 
+
     std::cout << std::endl;
 
     std::cout << "Ahora segun tu IMC y la regulacion nacional de la salud estas:... " << std::endl;
