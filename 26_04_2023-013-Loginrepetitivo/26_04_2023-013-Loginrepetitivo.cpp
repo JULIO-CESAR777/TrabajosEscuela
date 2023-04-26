@@ -2,11 +2,74 @@
 //
 
 #include <iostream>
+#include <string>
+#include <locale.h>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    bool datos = true;
+    std::string nameU = "1";
+    std::string contraU = "2";
+    std::string name;
+    std::string contra;
+  
+    
+    
+
+
+
+
+    while (datos)
+    {
+        std::cout << "Sup bro, bienvenido a Sword Art Online, ingresa tus datos para iniciar sesion!\n";
+        std::cout << "Nombre de usuario o correo elecronico \n";
+        std::cin >> name ;
+        
+        std::cout << "Ahora dime tu contraseña\n";
+        std::cin >> contra;
+
+
+        if (name == nameU && contra == contraU)
+        {
+            std::cout << "Bien hecho bro \ninsertar musica de liSA* \n \n Ahora como lo hiciste bien hay que volverlo a hacer :)\n ";
+            std::cout << "Nombre de usuario o correo elecronico \n";
+            std::cin >> name;
+            std::cout << "Ahora dime tu contraseña\n";
+            std::cin >> contra;
+
+            
+        }
+        else
+        {
+            std::cout << "Nah bro tu no existes wazaaa" <<std::endl;
+            system("pause");
+        }
+        system("cls");
+
+    }
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    
+    ////////////////////////////////////////////
+    
 }
+
+
+
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
 // Depurar programa: F5 o menú Depurar > Iniciar depuración
