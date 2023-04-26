@@ -29,47 +29,47 @@ int main()
 
     if (res1 == 1)
     {
-        std::cout << "En tu deporte se patea la bola?";
+        std::cout << "En tu deporte se patea la bola?\n";
         std::cin >> res11;
         if (res11 == 1)
         {
-            std::cout << "Tu deporte se jugo el mundial en QATAR?";
+            std::cout << "Tu deporte se jugo el mundial en QATAR?\n";
             std::cin >> res12;
             if (res12 == 1)
             {
-                std::cout << "Tu deporte lo juega un tipo guapo llamado messi?";
+                std::cout << "Tu deporte lo juega un tipo guapo llamado messi?\n";
                 std::cin >> res13;
                 if (res13 == 1)
                 {
-                    std::cout << "Tu deporte es el futbol WAZAAAA";
+                    std::cout << "Tu deporte es el futbol WAZAAAA\n";
                 }
             }
         }
         else
         {
-            std::cout << "Se lanza a un aro con las manos?";
+            std::cout << "Se lanza a un aro con las manos?\n";
             std::cin >> res21;
             if (res21 == 1)
             {
-                std::cout << "Lo juega alguien llamado Michael Jordan";
+                std::cout << "Lo juega alguien llamado Michael Jordan\n";
                 std::cin >> res22;
                 if (res22 == 1)
                 {
-                    std::cout << "Dale bro tu deporte es el basketball";
+                    std::cout << "Dale bro tu deporte es el basketball\n";
                 }
             }
             else
             {
-                std::cout << "Se le pega con un bate?";
+                std::cout << "Se le pega con un bate?\n";
                 std::cin >> res31;
                 if (res31 == 1)
                 {
-                    std::cout << "Es el beisbol bro gg ez";
+                    std::cout << "Es el beisbol bro gg ez\n";
 
                 }
                 else
                 {
-                    std::cout << "La tienes que lanzar por arriba de una red?";
+                    std::cout << "La tienes que lanzar por arriba de una red?\n";
                     std::cin >> res32;
                     if (res32 == 1)
                     {
@@ -77,7 +77,7 @@ int main()
                     }
                     else
                     {
-                        std::cout << "Se le pega con un palo de golf ? xd";
+                        std::cout << "Se le pega con un palo de golf ? xd\n";
                         std::cin >> res33;
                         if (res33 == 1)
                         {
@@ -85,7 +85,7 @@ int main()
                         }
                         else
                         {
-                            std::cout << "Se juega con una raqueta?";
+                            std::cout << "Se juega con una raqueta?\n";
                             std::cin >> res35;
 
                             if (res35 == 1)
@@ -95,7 +95,7 @@ int main()
                             else
                             {
 
-                                std::cout << "Se juega en el agua?";
+                                std::cout << "Se juega en el agua?\n";
 
                                 std::cin >> res34;
 
@@ -126,7 +126,7 @@ int main()
     }
     else
     {
-        std::cout << "En el deporte se golpean?";
+        std::cout << "En el deporte se golpean?\n";
         std::cin >> res36;
         if (res36 == 1)
         {
