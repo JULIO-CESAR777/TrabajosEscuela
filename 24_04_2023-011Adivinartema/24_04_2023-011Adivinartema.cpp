@@ -16,9 +16,9 @@ int main()
     int res32 = 1;
     int res33 = 1;
     int res34 = 1;
-    int res1 = 1;
-    int res1 = 1;
-
+    int res35 = 1;
+    int res36 = 1;
+   
 
     std::cout << "Wazaaaa, este es un adivinador de deportes (Sal con algo sencillo no con algo que ni el mundo conoce XD)\n";
     std::cout << "Vamos a empezar\n";
@@ -85,15 +85,35 @@ int main()
                         }
                         else
                         {
-                            std::cout << "Se juega en el agua?";
-                            std::cin >> res34;
-                            if (res34 == 1)
+                            std::cout << "Se juega con una raqueta?";
+                            std::cin >> res35;
+
+                            if (res35 == 1)
                             {
-                                std::cout << "Es el waterpolo";
+                                std::cout << "Pos es el tenis xd";
                             }
                             else
                             {
-                                std::cout << "Es el rugby";
+
+                                std::cout << "Se juega en el agua?";
+
+                                std::cin >> res34;
+
+                                if (res34 == 1)
+
+                                {
+
+                                    std::cout << "Es el waterpolo";
+
+                                }
+                                else
+                                {
+
+                               
+
+                                    std::cout << "Es el rugby";
+
+                                }
                             }
                         }
                     }
@@ -106,7 +126,17 @@ int main()
     }
     else
     {
-        //aca van deportes que noocupan balon
+        std::cout << "En el deporte se golpean?";
+        std::cin >> res36;
+        if (res36 == 1)
+        {
+            std::cout << "Es boxeo";
+        }
+        else
+        {
+            std::cout << "No pos no se, ya se me acabo el tiempo de hacer el programa, mejor intentalo con deportes con pelotas.";
+        }
+            
     }
 }
 
