@@ -8,37 +8,58 @@ int main()
 
     int listo = 1;
     int quierejugar = 1;
+    bool vida = true;
     std::cout << "Quieres jugar? 0)si 1)no\n";
     std::cin >> quierejugar;
+    std::string res1 = "aña";
+    int vidas = 3;
     if (quierejugar == 0)
     {
-        bool decision = true;
-        int aux = 0;
-        while (decision)//Evalua la veracidad de la sentencia
+        
+        while (vida)
         {
-            std::cout << "Quieres seguir jugando? 0)si 1)no \n";
-            std::cin >> quierejugar;
-            if (quierejugar == 1)
+            bool decision = true;
+            std::cout << "Apreta le tecla v para perder 1 vida owo ";
+            std::cin >> res1;
+            if (res1 == "v")
             {
-                decision = false;
+                vidas = vidas - 1;
+                std::cout << "Tienes" << vidas;  std::cout <<"Vidas"; ///areglaaaaaaaaaaaaaar
             }
-        }
-        std::cout << "Bien, ahora vamos a contar hasta el 100,listo? 0)si 1)no ";
-        std::cin >> listo;
-        if (listo == 0)
-        {
 
-            for (int i = 0; i < 101; i++) //i++ significa avance de 1 en 1. 
 
-            {
+           if (res1 == "v")
+           {
+             
 
-                std::cout << "El contador va en: " << i << std::endl;
+                while (decision)
+                {
+                    std::cout << "Quieres seguir jugando? 0)si 1)no \n";
+                    std::cin >> quierejugar;
+                    if (quierejugar == 1)
+                    {
+                        decision = false;
+                        vidas = vidas + 3;
+                    }
+                }
+             std::cout << "Bien, ahora vamos a contar hasta el 100,listo? 0)si 1)no ";
+             std::cin >> listo;
+             if (listo == 0)
+             {
 
-            }
-        }
-        else
-        {
-            std::cout << "Ta bien";
+                for (int i = 0; i < 101; i++) //i++ significa avance de 1 en 1. 
+
+                {
+
+                    std::cout << "El contador va en: " << i << std::endl;
+
+                }
+             }
+             else
+             {
+                std::cout << "Ta bien";
+             }
+           }
         }
     }
     else
