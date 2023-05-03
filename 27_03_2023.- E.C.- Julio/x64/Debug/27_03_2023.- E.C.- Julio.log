@@ -1,4 +1,5 @@
 ﻿  27_03_2023.- E.C.- Julio.cpp
-C:\Users\Amk24\Desktop\No formateen ni borrar pls\Visual Studio\TrabajosDeEscuela\27_03_2023.- E.C.- Julio\27_03_2023.- E.C.- Julio.cpp(13,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\Amk24\Desktop\No formateen ni borrar pls\Visual Studio\TrabajosDeEscuela\27_03_2023.- E.C.- Julio\27_03_2023.- E.C.- Julio.cpp(15,25): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  27_03_2023.- E.C.- Julio.vcxproj -> C:\Users\Amk24\Desktop\No formateen ni borrar pls\Visual Studio\TrabajosDeEscuela\27_03_2023.- E.C.- Julio\x64\Debug\27_03_2023.- E.C.- Julio.exe
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\27_03_2023.- E.C.- Julio\27_03_2023.- E.C.- Julio.cpp(13,23): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\27_03_2023.- E.C.- Julio\27_03_2023.- E.C.- Julio.cpp(15,25): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  LINK : no se encontró C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\27_03_2023.- E.C.- Julio\x64\Debug\27_03_2023.- E.C.- Julio.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  27_03_2023.- E.C.- Julio.vcxproj -> C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\27_03_2023.- E.C.- Julio\x64\Debug\27_03_2023.- E.C.- Julio.exe

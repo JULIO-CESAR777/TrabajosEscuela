@@ -7,15 +7,24 @@
 
 #include <iostream>
 #include <locale.h>
-
+#include "string"
+using namespace std;
 int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
 
     std::cout << "Hola bienvenido aña!\n";
 
+    float numero1 = 1;
+    float numero2 = 2;
 
+    float suma = 1;
+    float resta = 1;
+    float multiplicacion = 1;
+    float division = 1;
+    
     bool pregunta = false;
+    char angulostotales = 50;
     std::cout << "Lea y responda con verdadero o falso: \n" <<
         "Anoche hiciste un mortal de 360 en una feria turka? 0)No 1) Si" << std::endl;
     //Recibir respuesta del usuario
@@ -54,16 +63,42 @@ int main()
 
     std::string nombreshavo = "aña";
 
-    std::cout << "Bro y cual es tu nombre?" << std::endl;
+    std::cout << "Bro y cual es tu nombre radical??" << std::endl;
 
-    std::cin >> nombreshavo;
+    getline(cin, nombreshavo);
 
 
     std::cout << "wow " << nombreshavo << " ese nombre tan radical bro, aña jijijija, pancakes";
 
+    std::cout << "Dime 2 numeros nada mas por que quiero (que sean distintos)";
+    std::cin >> numero1;
+    std::cout << "Dime el otro numero nada mas por que quiero";
+    std::cin >> numero2;
+
+    suma = numero1 + numero2;
+    resta = numero1 - numero2;
+   
+    division = numero1 / numero2;
+       
+    if (numero1 > numero2 )
+    {
+            std::cout << "El digito mayor es " << numero1;
+
+    }
+    else
+    {
+            std::cout << "El digito mayor es " << numero2;
+    }
+    std::cout << "Tu suma es: " << suma;
+    std::cout << "Tu resta es : " << resta;
+    std::cout << "Tu division es: " << suma;
+
+
+
      
-
-
+    angulostotales = (n_vueltas * angulo);
+    std::cout << "Hiciste" << angulostotales << "grados celcius bro WAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+    
     
 
 

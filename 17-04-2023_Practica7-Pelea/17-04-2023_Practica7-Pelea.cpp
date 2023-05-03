@@ -52,7 +52,7 @@ int main()
             }
         }
         peleas = peleas - 1;
-        std::cout << "Fueron al final " << peleas << " peleas OwO y quedo 1 " << " ganador con enfrentamientos de " <<peleadorestotal <<" personas" << std::endl;
+        std::cout << "Fueron al final " << peleas << " peledores OwO y quedo 1 " << " ganador con enfrentamientos de " <<peleadorestotal <<" peleas" << std::endl;
 
          
 
@@ -75,8 +75,8 @@ int main()
             }
         }
 
-        peleas = peleas - 1;
-        std::cout << "Fueron en total " << peleas << " peleas OwO";
+        peleas = peleas -1;
+        std::cout << "Fueron en total " << peleas << " etapas de peleas (no numero de peleas ya que se maneja en etapas) OwO";
 
         break;
 
