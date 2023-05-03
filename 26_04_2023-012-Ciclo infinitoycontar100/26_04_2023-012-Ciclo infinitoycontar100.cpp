@@ -13,58 +13,75 @@ int main()
     std::cin >> quierejugar;
     std::string res1 = "aña";
     int vidas = 3;
+    bool decision = true;
     if (quierejugar == 0)
     {
         
         while (vida)
         {
-            bool decision = true;
-            std::cout << "Apreta le tecla v para perder 1 vida owo ";
-            std::cin >> res1;
-            if (res1 == "v")
+
+
+
+            if (vidas > 0)
             {
-                vidas = vidas - 1;
-                std::cout << "Tienes" << vidas;  std::cout <<"Vidas"; ///areglaaaaaaaaaaaaaar
+                while (vidas > 0)
+                {
+                    std::cout << "Apreta le tecla v para perder 1 vida owo ";
+                    std::cin >> res1;
+                    if (res1 == "v")
+                    {
+                        vidas = vidas - 1;
+                        std::cout << "Tienes " << vidas;  std::cout << " Vidas ";
+                        decision = true;
+
+                    }
+                }
             }
 
 
-           if (res1 == "v")
-           {
-             
-
-                while (decision)
+            while (decision)
+            {
+                std::cout << "Quieres seguir jugando? 0)si 1)no \n";
+                std::cin >> quierejugar;
+                if (quierejugar == 0)
                 {
-                    std::cout << "Quieres seguir jugando? 0)si 1)no \n";
-                    std::cin >> quierejugar;
-                    if (quierejugar == 1)
-                    {
-                        decision = false;
-                        vidas = vidas + 3;
-                    }
+                    decision = false;
+                    vidas = vidas + 3;
                 }
-             std::cout << "Bien, ahora vamos a contar hasta el 100,listo? 0)si 1)no ";
-             std::cin >> listo;
-             if (listo == 0)
-             {
-
-                for (int i = 0; i < 101; i++) //i++ significa avance de 1 en 1. 
-
+                else
                 {
-
-                    std::cout << "El contador va en: " << i << std::endl;
-
+                    decision = false;
+                    vida = false;
                 }
-             }
-             else
-             {
-                std::cout << "Ta bien";
-             }
-           }
+            }
         }
-    }
+
+        std::cout << "Bien, ahora vamos a contar hasta el 100,listo? 0)si 1)no ";
+        std::cin >> listo;
+        if (listo == 0)
+        {
+
+            for (int i = 0; i < 101; i++) //i++ significa avance de 1 en 1. 
+
+            {
+
+                std::cout << "El contador va en: " << i << std::endl;
+
+            }
+        }
+        else
+        {
+            std::cout << "Ta bien";
+        }
+
+
+             
+           
+        
+    }   
     else
     {
-        std::cout << "Que mala onda";
+        std::cout << "Ta bien";
     }
 }
 
