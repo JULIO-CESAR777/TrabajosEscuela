@@ -58,30 +58,49 @@ int main()
     
     
     
-    
+    int opcioncontar = 1;
    
-    
-    
-    
-    std::cout << "Ahora vamos a contar lento uwu jijijija WAZAAAAA";
-
+    std::cout << "Quieres contar lento hasta al 100, 1) 10 en 10, 2)  1 en 1 \n";
+    std::cin >> opcioncontar;
     credito = true;
     aux = 0;
 
-    while (credito)
+    if (opcioncontar == 2)
     {
-        Sleep(1000);
+        std::cout << "Ahora vamos a contar lento de uno en uno uwu jijijija WAZAAAAA \n";
+
         
-        std::cout << "Va   " << aux << std::endl;
-        aux = aux + 1;
-        if (aux == 1001)
+
+        while (credito)
         {
-            credito = false;
+            Sleep(1000);
+
+            std::cout << "Va   " << aux << std::endl;
+            aux = aux + 1;
+            if (aux == 101)
+            {
+                credito = false;
+            }
         }
     }
-    
+    else
+    {
+
+        std::cout << "Ahora vamos a contar lento de 10 en 10 uwu jijijija WAZAAAAA \n";
+        while (credito)
+        {
+            Sleep(1000);
+
+            std::cout << "Va   " << aux << std::endl;
+            aux = aux + 10;
+            if (aux >=101)
+            {
+                credito = false;
+            }
+        }
+    }
    
-    return 0; 
+     
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
