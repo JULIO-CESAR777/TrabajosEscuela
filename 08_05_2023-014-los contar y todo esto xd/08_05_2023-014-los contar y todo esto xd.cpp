@@ -60,7 +60,7 @@ int main()
     
     int opcioncontar = 1;
    
-    std::cout << "Quieres contar lento hasta al 100, 1) 10 en 10, 2)  1 en 1 \n";
+    std::cout << "Quieres contar lento hasta al 100, 1) 1 en 1 pero destacando multiplos del 10, 2)  1 en 1 \n";
     std::cin >> opcioncontar;
     credito = true;
     aux = 0;
@@ -86,13 +86,17 @@ int main()
     else
     {
 
-        std::cout << "Ahora vamos a contar lento de 10 en 10 uwu jijijija WAZAAAAA \n";
+        std::cout << "Ahora vamos a contar lento de 1 en 1 destacando multiplos del 10 uwu jijijija WAZAAAAA \n";
         while (credito)
         {
             Sleep(1000);
 
             std::cout << "Va   " << aux << std::endl;
-            aux = aux + 10;
+            aux = aux + 1;
+            if (aux == 10 || aux == 20 || aux == 30 || aux == 40 || aux == 50 || aux == 60 || aux == 70 || aux == 80 || aux == 90 || aux == 100)
+            {
+                std::cout <<aux << " es multiplo de 10 wazzaaa \n";
+            }
             if (aux >=101)
             {
                 credito = false;
