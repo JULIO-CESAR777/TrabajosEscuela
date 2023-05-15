@@ -17,7 +17,7 @@ int main()
     std::string nombrepokemon2 = "Metapod";
     int decision = 1;
     int vida1 = 35;
-    int ataque1 = 70;
+    int ataque1 = 50;
     int defensa1 = 40;
     int sanacion1 = 10;
     int velocidad = 90;
@@ -53,116 +53,234 @@ int main()
       
     }
    
-    /////agregar algo para que evalue el do  aparte por si eliges a metapod
-    do 
-    {
-    
-        while (player)
-        { 
-            std::cout << "Pos ahora toca pelear owowowowowoowowowo que diras que haga tu " << pokemonelegido << "?\n 1)Ataque \n 2)Habilidad (" << habilidad << ")\n 3)Sanarse (Solamente tiene 3 potis y te sana 15)\n 4)rendirte xd\n";
-            std::cin >> decision;
-            switch (decision)
-            {
-            case 1:
+    /////agregar algo y repararlo checarlo
 
-                vidarestante2 = ataque1-defensa2;
-                vida2 = vida2 - vidarestante2;
-                if (vidarestante2 < 0)
+    if (opc == 1)
+    {
+        while (vida1 > 0 && vida2 > 0)
+        {
+
+            while (player)
+            {
+                std::cout << "Pos ahora toca pelear owowowowowoowowowo que diras que haga tu " << pokemonelegido << "?\n 1)Ataque \n 2)Habilidad (" << habilidad << ")\n 3)Sanarse (Solamente tiene 3 potis y te sana 15)\n 4)rendirte xd\n";
+                std::cin >> decision;
+                switch (decision)
                 {
-                    std::cout << "Elataque de tu pokemon no fue efectivo gracias a la defensa del enemigo, su vida restante es= " << vida2 <<std::endl;
-                }
-                else
-                {
-                   
-                    std::cout << "Tu pokemon hace un ataque basico y se queda a" << vida2 << "de vida \n";
-                }
-                
-                player = false;
-                ia = true;
-                break;
-            case 2:
-                ataque1 = ataque1 + 7;
+                case 1:
+
+                    vidarestante2 = ataque1 - defensa2;
+                    vida2 = vida2 - vidarestante2;
+                    if (vidarestante2 < 0)
+                    {
+                        std::cout << "Elataque de tu pokemon no fue efectivo gracias a la defensa del enemigo, su vida restante es= " << vida2 << std::endl;
+                    }
+                    else
+                    {
+
+                        std::cout << "Tu pokemon hace un ataque basico y se queda a" << vida2 << "de vida \n";
+                    }
+
+                    player = false;
+                    ia = true;
+                    break;
+                case 2:
+                    ataque1 = ataque1 + 7;
                     std::cout << "Tu pokemon se fortalece y gana 7 puntos de ataque, ahora tienes= " << ataque1 << " puntos de ataque \n";
 
                     player = false;
                     ia = true;
                     break;
-            case 3:
-                vida1 = vida1 + 15;
-                if (vida1 > 35)
-                {
+                case 3:
+                    vida1 = vida1 + 15;
+                    if (vida1 > 35)
+                    {
 
-                    std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual= 35 \n";
+                        std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual= 35 \n";
 
-                }
-                else
-                {
-                    std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual=" << vida1 << std::endl;
-                }
-                player = false;
+                    }
+                    else
+                    {
+                        std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual=" << vida1 << std::endl;
+                    }
+                    player = false;
                     ia = true;
                     break;
-            case 4:
+                case 4:
 
-                std::cout << "Pos te rindes xd";
-                exit(-1);
-
-            } 
-
-        }
-        while (ia)
-        {
-            num = rand() % (4);
-            num = num + 1;
-           
-            
-            
-            switch (num)
-            {
-            case 1:
-
-                vidarestante1 = ataque2 - defensa1;
-                vida1 = vida1 - vidarestante1;
-                if (vidarestante1 < 0)
-                {
-                    std::cout << "El ataque del pokemon enemigo no fue efectivo gracias a tu defensa, tu vida restante sigue siendo= " << vida1 << std::endl;
-                }
-                else
-                {
-
-                    std::cout << "El pokemon enemigo hace un ataque basico y te quedas a" << vida1 << "de vida \n";
-                }
-                
-                player = true;
-                ia = false;
-                break;
-            case 2:
-                defensa2 = defensa2 + 10;
-                std::cout << "El pokemon enemigo se fortalece y gana 10 puntos de defensa, ahora tiene= " <<defensa2 << " puntos de defensa \n";
-
-                player = true;
-                ia = false;
-                break;
-            case 3:
-                vida2 = vida2 + 15;
-                if (vida2 > 50)
-                {
-
-                    std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual= 50 \n" ;
+                    std::cout << "Pos te rindes xd";
+                    exit(-1);
 
                 }
-                else
-                {
-                    std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual=" << vida2 << std::endl;
-                }
-                player = true;
-                ia = false;
-                break;
-            
 
             }
+            while (ia)
+            {
+                num = rand() % (4);
+                num = num + 1;
+
+
+
+                switch (num)
+                {
+                case 1:
+
+                    vidarestante1 = ataque2 - defensa1;
+                    vida1 = vida1 - vidarestante1;
+                    if (vidarestante1 < 0)
+                    {
+                        std::cout << "El ataque del pokemon enemigo no fue efectivo gracias a tu defensa, tu vida restante sigue siendo= " << vida1 << std::endl;
+                    }
+                    else
+                    {
+
+                        std::cout << "El pokemon enemigo hace un ataque basico y te quedas a" << vida1 << "de vida \n";
+                    }
+
+                    player = true;
+                    ia = false;
+                    break;
+                case 2:
+                    defensa2 = defensa2 + 10;
+                    std::cout << "El pokemon enemigo se fortalece y gana 10 puntos de defensa, ahora tiene= " << defensa2 << " puntos de defensa \n";
+
+                    player = true;
+                    ia = false;
+                    break;
+                case 3:
+                    vida2 = vida2 + 15;
+                    if (vida2 > 50)
+                    {
+
+                        std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual= 50 \n";
+
+                    }
+                    else
+                    {
+                        std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual=" << vida2 << std::endl;
+                    }
+                    player = true;
+                    ia = false;
+                    break;
+
+
+                }
+            }
+        } 
+    }
+    else
+    {
+        while (vida1 > 0 && vida2 > 0)
+        {
+
+            while (player)
+            {
+                std::cout << "Pos ahora toca pelear owowowowowoowowowo que diras que haga tu " << pokemonelegido << "?\n 1)Ataque \n 2)Habilidad (" << habilidad << ")\n 3)Sanarse (Solamente tiene 3 potis y te sana 15)\n 4)rendirte xd\n";
+                std::cin >> decision;
+                switch (decision)
+                {
+                case 1:
+
+                    vidarestante1 = ataque2 - defensa1;
+                    vida1 = vida1 - vidarestante1;
+                    if (vidarestante1 < 0)
+                    {
+                        std::cout << "Elataque de tu pokemon no fue efectivo gracias a la defensa del enemigo, su vida restante es= " << vida1 << std::endl;
+                    }
+                    else
+                    {
+
+                        std::cout << "Tu pokemon hace un ataque basico y se queda a" << vida1 << "de vida \n";
+                    }
+
+                    player = false;
+                    ia = true;
+                    break;
+                case 2:
+                    defensa2 = defensa2 + 10;
+                    std::cout << "Tu pokemon se fortalece y gana 10 puntos de defensa, ahora tiene= " << defensa2 << " puntos de defensa \n";
+
+                    player = false;
+                    ia = true;
+                    break;
+                case 3:
+                    vida2 = vida2 + 15;
+                    if (vida2 > 35)
+                    {
+
+                        std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual= 50 \n";
+
+                    }
+                    else
+                    {
+                        std::cout << "Te tomas una poti y recuperas 15 puntos de vida, vida actual=" << vida2 << std::endl;
+                    }
+                    player = false;
+                    ia = true;
+                    break;
+                case 4:
+
+                    std::cout << "Pos te rindes xd";
+                    exit(-1);
+
+                }
+
+            }
+            while (ia)
+            {
+                num = rand() % (4);
+                num = num + 1;
+
+
+
+                switch (num)
+                {
+                case 1:
+
+                    vidarestante2 = ataque1 - defensa2;
+                    vida2 = vida2 - vidarestante2;
+                    if (vidarestante2 < 0)
+                    {
+                        std::cout << "El ataque del pokemon enemigo no fue efectivo gracias a tu defensa, tu vida restante sigue siendo= " << vida2 << std::endl;
+                    }
+                    else
+                    {
+
+                        std::cout << "El pokemon enemigo hace un ataque basico y te quedas a" << vida2 << "de vida \n";
+                    }
+
+                    player = true;
+                    ia = false;
+                    break;
+                case 2:
+                    
+                    ataque2 = ataque2 + 7;
+                    std::cout << "El pokemon enemigo se fortalece y gana 7 puntos de ataque, ahora tiene= " << ataque1 << " puntos de ataque \n";
+
+                    player = true;
+                    ia = false;
+                    break;
+                case 3:
+                    vida1 = vida1 + 15;
+                    if (vida2 > 50)
+                    {
+
+                        std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual= 50 \n";
+
+                    }
+                    else
+                    {
+                        std::cout << "Se toma una poti y recupera 15 puntos de vida, vida actual=" << vida1 << std::endl;
+                    }
+                    player = true;
+                    ia = false;
+                    break;
+
+
+                }
+            }
         }
-    } while (vida1 > 0 && vida2 > 0);
+    }
+
 
     //generador numero aleatorio 
    
