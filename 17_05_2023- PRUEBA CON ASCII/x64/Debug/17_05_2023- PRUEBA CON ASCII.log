@@ -1,0 +1,43 @@
+﻿  17_05_2023- PRUEBA CON ASCII.cpp
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(19,229): error C3872: '0xa0': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(19,229): error C2065: 'â €': identificador no declarado
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(20,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(20,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(21,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(21,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(22,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(22,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(23,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(23,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(24,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(24,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(25,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(25,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(26,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(26,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(27,14): error C2143: error de sintaxis: falta ';' delante de 'std::cout'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(27,22): error C2001: nueva línea en constante
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa0': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa2': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0x201c': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa6': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa3': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa1': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0x81': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0xa4': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0x2019': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C3872: '0x2030': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xa0': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xa3': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xa1': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0x2030': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xa4': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xa2': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xbb': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0xbf': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(29,13): error C3872: '0x2020': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(28,13): error C2146: error de sintaxis: falta ';' delante del identificador 'â €â €â €â €â €â €â €â¢¸â ˆâ “â ¦â €â£€â£€â£€â €â¡ â ´â Šâ ¹â¡žâ£â ¤â ’â ‰â €â €â €â €â €'
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(30,13): error C3872: '0xa0': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(30,13): error C3872: '0xb0': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(30,13): error C3872: '0x81': este carácter no se permite en un identificador
+C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\17_05_2023- PRUEBA CON ASCII\17_05_2023- PRUEBA CON ASCII.cpp(30,13): fatal  error C1003: el recuento de errores supera 100; se detiene la compilación
