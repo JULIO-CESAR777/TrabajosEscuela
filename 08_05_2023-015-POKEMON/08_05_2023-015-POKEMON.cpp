@@ -450,9 +450,7 @@ int main()
     else
     {
         std::cout << "Motapod ha muerto, gana pikachu \n";
-    }
-
-    
+    } 
 }
 
 
