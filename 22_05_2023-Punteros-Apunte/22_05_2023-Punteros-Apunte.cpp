@@ -23,6 +23,8 @@ int main()
     std::cout << "El valor de la variable apuntada: " << *apuntador << std::endl;
 
     std::cout << "El valor de la direccion apuntada: " << &apuntador << std::endl;
+
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

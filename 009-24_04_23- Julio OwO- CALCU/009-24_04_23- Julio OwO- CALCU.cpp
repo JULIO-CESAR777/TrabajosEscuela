@@ -83,9 +83,14 @@ int main()
             std::cout << "El digito mayor es " << digito1;
 
         }
-        else
+       
+        if (digito1< digito2)
         {
             std::cout << "El digito mayor es " << digito2;
+        }
+        if (digito1 == digito2)
+        {
+            std::cout << "SON IGUALES EL DIGITO  " << digito2;
         }
         break;
 
