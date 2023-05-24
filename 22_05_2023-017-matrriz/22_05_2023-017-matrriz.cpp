@@ -6,31 +6,150 @@
 int main()
 {
     
-    int mat[3][3];
-    int fila[5];
-    int columna[5];
-
-  
-
-    for (int i = 0; i < 3; i++) //ciclo para acceder filas
+    int mat[10][10];
+    int opc = 1;
+    int opc2 = 1;
+    
+    std::cout << "De cuanto quieres la tablita de numeros randoms? 1)3x3  2)5x5 3)10x10" << std::endl;
+    std::cin >> opc;
+    switch (opc)
     {
-        for (int j = 0; j < 3; j++) //ciclo para acceder columnas
+    case 1:
+
+        for (int i = 0; i < 3; i++) //ciclo para acceder filas
         {
-            
-            mat[i][j] = rand() % 10;
-          
-            
+            for (int j = 0; j < 3; j++) //ciclo para acceder columnas
+            {
+
+                mat[i][j] = rand() % (10);
+
+
+            }
         }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                std::cout << mat[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        break;
+    case 2:
+        
+        for (int i = 0; i < 5; i++) //ciclo para acceder filas
+        {
+            for (int j = 0; j < 5; j++) //ciclo para acceder columnas
+            {
+
+                mat[i][j] = rand() % (10);
+
+
+            }
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                std::cout << mat[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        break;
+    case 3:
+        for (int i = 0; i < 10; i++) //ciclo para acceder filas
+        {
+            for (int j = 0; j < 10; j++) //ciclo para acceder columnas
+            {
+
+                mat[i][j] = rand() % (10);
+
+
+            }
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                std::cout << mat[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        break;
     }
-    for (int i = 0; i < 2; i++)
+    
+    
+    std::cout << "Ahora haciendo que tu escribas los numeros OOWOWOWWWOWOWWOWO, pos de nuevo que tipo de matriz quieres 1)3x3  2)5x5 3)10x10 " << std::endl;
+    std::cin >> opc2;
+    switch (opc2)
     {
-        for (int j = 0; j < 3; j++)
+    case 1:
+
+        for (int i = 0; i < 3; i++) //ciclo para acceder filas
         {
-            std::cout << mat[i][j] << " ";
+            for (int j = 0; j < 3; j++) //ciclo para acceder columnas
+            {
+                
+                std::cout << "El numero de fila " << i + 1 << std::endl;
+                std::cin >> mat[i][j];
+
+
+            }
         }
-        std::cout << std::endl;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                std::cout << j + 1 << ".- " << mat[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        break;
+    case 2:
+
+        for (int i = 0; i < 5; i++) //ciclo para acceder filas
+        {
+            for (int j = 0; j < 5; j++) //ciclo para acceder columnas
+            {
+
+                std::cout << "El numero de fila " << i + 1 << std::endl;
+                std::cin >> mat[i][j];
+
+
+            }
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                std::cout << j + 1 << ".- " << mat[i][j] << " ";
+                 
+            }
+            std::cout << std::endl;
+        }
+        break;
+    case 3:
+        for (int i = 0; i < 10; i++) //ciclo para acceder filas
+        {
+            for (int j = 0; j < 10; j++) //ciclo para acceder columnas
+            {
+
+                std::cout << "El numero de fila " << i + 1 << std::endl;
+                std::cin >> mat[i][j];
+
+
+            }
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                std::cout << j + 1 << ".- " << mat[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+        break;
     }
-  
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
