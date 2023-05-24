@@ -72,6 +72,10 @@ int main()
             std::cout << std::endl;
         }
     }
+    delete[] filas;
+    delete[] columnas;
+    filas = NULL;
+    columnas = NULL;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
