@@ -23,19 +23,36 @@ int main()
     titulos = new std::string[size];
     autores = new std::string[size];
 
-    //Recuerda siempre destruir la memoria dinamica
-    delete[]titulos;
-    delete[] autores;
-    titulos = NULL;
-    autores = NULL;
+    
 
     //Ahora solicita la informacion
     for (int i = 0; i < size; i++)
     {
-        std::cout << "Titulo " << i << "\n";
+        if (i == 0)
+        {
+            std::cin.ignore();
+        }
+        std::cout << "Echale el nombre de la peli #: " << i + 1 << std::endl;
         getline(std::cin, titulos[i]);
+        std::cout << "Quien hizo la peli #: " << i + 1 << std::endl;
+        getline(std::cin, autores[i]);
     }
     
+    //Imprimir la informacion
+
+  
+    for (int i = 0; i < size; i++)
+    {
+        std::cout << "El Titulo de la peli: " << i + 1 << " es: " << titulos[i] << std::endl;
+
+        std::cout << "El Autor de la peli: " << i + 1 << " es: " << autores[i] << std::endl;
+    }
+
+    //Recuerda siempre destruir la memoria dinamica
+    delete[] titulos;
+    delete[] autores;
+    titulos =  NULL;
+    autores =  NULL;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
