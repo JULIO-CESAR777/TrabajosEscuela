@@ -1,54 +1,51 @@
-// 24_05_2023-arreglos.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// 24_05_2023-arreglos.cpp 
 
 #include <iostream>
 #include <string.h>
 #include <string>
 
+using namespace std;
+
 int main()
 {
-    //pARA CREAR ARREGLOS DINAMICOS necesitamos memoria no estatica.
-    //Esto se logra un con punterois.
-    //Creamos la variable puntro y la inicializamos en NULL
-    std::string* titulos = NULL;
-    std::string* autores = NULL;
-    std::string libros [10]; 
+    // Para crear arreglos dinamicos necesitamos memoria no estatica.
+    // Esto se logra un con punterois.
+    // Creamos la variable puntro y la inicializamos en NULL
+    string* titulos = NULL;
+    string* autores = NULL;
+    string libros [10]; 
     
-    //Memoria estatica
+    // Memoria estatica
     int size;
-    std::cout << "Cuantas pelis quieres registrar?" << std::endl;
-    std::cin >> size;
+    cout << "Cuantas pelis quieres registrar?" << endl;
+    cin >> size;
     
-    //crear arreglos dinamicos
-    titulos = new std::string[size];
-    autores = new std::string[size];
+    // Crear arreglos dinamicos
+    titulos = new string[size];
+    autores = new string[size];
 
-    
-
-    //Ahora solicita la informacion
+    // Ahora solicita la informacion
     for (int i = 0; i < size; i++)
     {
         if (i == 0)
         {
-            std::cin.ignore();
+            cin.ignore();
         }
-        std::cout << "Echale el nombre de la peli #: " << i + 1 << std::endl;
-        getline(std::cin, titulos[i]);
-        std::cout << "Quien hizo la peli #: " << i + 1 << std::endl;
-        getline(std::cin, autores[i]);
-    }
-    
-    //Imprimir la informacion
 
-  
+        cout << "Echale el nombre de la peli #: " << i + 1 << endl;
+        getline(cin, titulos[i]);
+        cout << "Quien hizo la peli #: " << i + 1 << endl;
+        getline(cin, autores[i]);
+    }
+    // Imprimir la informacion
+
     for (int i = 0; i < size; i++)
     {
-        std::cout << "El Titulo de la peli: " << i + 1 << " es: " << titulos[i] << std::endl;
-
-        std::cout << "El Autor de la peli: " << i + 1 << " es: " << autores[i] << std::endl;
+        cout << "El Titulo de la peli: " << i + 1 << " es: " << titulos[i] << endl;
+        cout << "El Autor de la peli: " << i + 1 << " es: " << autores[i] << endl;
     }
 
-    //Recuerda siempre destruir la memoria dinamica
+    // Recuerda siempre destruir la memoria dinamica
     delete[] titulos;
     delete[] autores;
     titulos =  NULL;
