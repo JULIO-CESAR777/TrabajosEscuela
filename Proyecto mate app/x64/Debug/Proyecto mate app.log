@@ -1,2 +1,0 @@
-﻿MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo main sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\Amk24\Desktop\TrabajosDeEscuela-main\TrabajosEscuela\Proyecto mate app\x64\Debug\Proyecto mate app.exe : fatal error LNK1120: 1 externos sin resolver
