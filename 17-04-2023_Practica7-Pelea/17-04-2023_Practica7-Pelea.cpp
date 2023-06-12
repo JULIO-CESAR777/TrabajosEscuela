@@ -12,14 +12,19 @@ int main()
     int peleadorestotal = 10;
 
     int peleadores = 15;
-
+    int grupo = 0;
     int peleas =1;
-
+    int duelo1 = 1;
     bool peleasn = true;
-
-    int grupos = 1;
-
+    int cruces = 1;
+    int grupos = 0;
+    int tilin = 1;
     int pelexgrup = 1;
+
+    int fase = 1;
+    int extras = 1;
+    int eliminaciondirecta = 1;
+    int sobrantes = 1;
 
     int opc = 0;
     std::cout << "Hola shavo este sera cuantas peleas habra dependiendo el tipo de batalla que eligas y peleadores.\n" << std::endl;
@@ -60,56 +65,57 @@ int main()
 
         
     case 2:
-        std::cout << "Bienvenido bro, esta sera una etapa de 1 vs 1 como tipico torneo de eliminacion directa!\n" << std::endl;
-
-
-        while (peleasn)
-        {
-            std::cout << "Va " << peleas << " Peleas \n";
-            peleadores = peleadores / 2;
-            peleas = peleas + 1;
-
-            if (peleadores <= 1)
-            {
-                peleasn = false;
-            }
+        std::cout << "Entonces será por eliminación directa\n" << std::endl;
+        for (int n = 1; n < peleadores; ) {
+            n = n * 2;
+            tilin = n;
         }
-
-        peleas = peleas -1;
-        std::cout << "Fueron en total " << peleas << " etapas de peleas (no numero de peleas ya que se maneja en etapas) OwO";
-
+        if (tilin == peleadores) 
+        {
+            eliminaciondirecta = (tilin - 1);
+            std::cout << "Entonces el número de batallas será de " << eliminaciondirecta << " batallas." << std::endl;
+        }
+        else
+        {
+            duelo1 = (tilin / 2);
+            eliminaciondirecta = (peleadores - 1);
+            std::cout << "Entonces el número de batallas será de " << eliminaciondirecta << " batallas. Aunque recomendaría hacerla de " << duelo1 << " peleadores." << std::endl;
+        }
         break;
 
     case 3:
         
-        std::cout << "Bienvenido bro, esta sera una de Grupos, semifinal y final!\n" << std::endl;
-        std::cout << "Sera en grupos de 2 \n" << std::endl;      
-        
-        pelexgrup = peleadores / 2;
+    
+        if (peleadores < 4) {
+            std::cout << "Se necesitan mas de 4 che, por algo es por grupos, si no no seria por grupo, JiJiJiJa";
+        }
+        else {
+            cruces = (peleadores / 4);
+            for (int g = 1; g < cruces; g++) {
+                grupo = (cruces - g) + grupo;
+            }
+            fase = grupo * 4;
+            sobrantes = peleadores % 4;
+            extras = sobrantes * cruces;
+           peleas = fase + extras + 3;
 
-        while (peleasn)
-        {
-            std::cout << "Va " << peleas << " Peleas con " <<pelexgrup <<" peleadores " << std::endl;
-            
-            peleadorestotal += peleadores;
-            pelexgrup = pelexgrup - 1;
-            peleas = peleas + 1;
 
-            if (pelexgrup == 0)
+            std::cout << "Entonces será por grupos, semifinal y final" << std::endl;
+            std::cout << "Entonces el número de batallas será de " << peleas << " enfrentamientos." << std::endl;
+            if (sobrantes == 0) 
             {
-                peleasn = false;
+                std::cout << "Los grupos serían de " << cruces << " peleadores. Los mejores de cada grupo pasan a las semifinales :)";
+            }
+            else 
+            {
+                std::cout << "Los grupos serían de " << cruces << " peleadores. Aunque habría " << sobrantes << " grupos con un peleador más.";
             }
         }
 
-
-        ////////// SE ME CANSO EL CERERBRO ASI LO DEJO  :(:(76   (&(%&/(%/(%&)))) CREO QUE ESTUVI BIEN YA QUE :(
-      
-        std::cout << std::endl;
-        peleas = peleas - 1;
-
-        std::cout << "Habra " << peleas << " peleas en grupo  " << std::endl;
-
         break;
+      
+
+       
 
     default:
         std::cout << "Te comiste payaso no??\n";
